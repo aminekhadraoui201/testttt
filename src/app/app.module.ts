@@ -112,6 +112,23 @@ import { AddtacheComponent } from './tache/addtache/addtache.component';
 import { ListtacheComponent } from './tache/listtache/listtache.component';
 import { UpdatetacheComponent } from './tache/updatetache/updatetache.component';
 import { DeletetacheComponent } from './tache/deletetache/deletetache.component';
+import { HomeComponent } from './shared/home/home.component';
+import { AccueilComponent } from './shared/accueil/accueil.component';
+import { FooterComponent } from './back/components/footer/footer.component';
+import { NavbarComponent } from './back/components/navbar/navbar.component';
+import { SidebarComponent } from './back/components/sidebar/sidebar.component';
+import { AdminLayoutComponent } from './back/layouts/admin-layout/admin-layout.component';
+import { AuthLayoutComponent } from './back/layouts/auth-layout/auth-layout.component';
+import { ComponentsModule } from './back/components/components.module';
+import { DashboardComponent } from './back/pages/dashboard/dashboard.component';
+import { ReclamationComponent } from './back/pages/reclamation/reclamation.component';
+import { AdminLayout1Component } from './front/layouts/admin-layout1/admin-layout1.component';
+import { NavbarfrontComponent } from './front/components/navbarfront/navbarfront.component';
+import { FooterfrontComponent } from './front/components/footerfront/footerfront.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -224,11 +241,30 @@ import { DeletetacheComponent } from './tache/deletetache/deletetache.component'
     ListtacheComponent,
     UpdatetacheComponent,
     DeletetacheComponent,
+    
+   
+    HomeComponent,
+    AccueilComponent,
+    
+    AdminLayoutComponent,
+    AuthLayoutComponent,
+    
+    ReclamationComponent,
+         AdminLayout1Component,
+         NavbarfrontComponent,
+         FooterfrontComponent,
+       
+         
+    
   ],
   imports: [
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    ComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
